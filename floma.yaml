@@ -1,0 +1,15 @@
+commands:
+  - name: Greeting
+    run: "echo Hello world"
+    dir: "/Users/christineharutyunyan/Projects/admin"
+  - name: Buyer
+    run: "npm run start-dev"
+    dir: "/Users/christineharutyunyan/Projects/buyer"
+    environment:
+      PORT: 4004
+  - name: Admin
+    run: "npm run start-dev"
+    dir: "/Users/christineharutyunyan/Projects/admin"
+    environment:
+      PORT: 4003
+      floma: rocks
